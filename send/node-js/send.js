@@ -1,17 +1,20 @@
 const axios = require("axios");
 const https = require("https");
+var btoa = require("btoa");
 
-const token =
-  "Basic NWYwOTU4ZDM1ZDgwM2ZlYzpNamhsTUdGbFkyWXpObUk1TVRZd01qZzRZamhtWW1GbU5HSTJOakZsTnprMU16WXlaRFJsTTJOa09HWXdZamd3TlRZeU1HUm1aRFUwTldGa05qSTBOZz09";
+const api_key = "<api_key>";
+const secret_key = "<secret_key>";
 const content_type = "application/json";
-const source_addr = "INFO";
+const source_addr ="<source_addr>";
+
 function send_sms() {
   axios
     .post(
-      "https://sms.bongolive.africa/api/v1/send",
+      "https://apisms.beem.africa/api/v1/send",
       {
         source_addr: source_addr,
         schedule_time: "",
+        encoding: 0,
         message: "Hello World",
         recipients: [
           {
@@ -27,14 +30,14 @@ function send_sms() {
       {
         headers: {
           "Content-Type": content_type,
-          Authorization: token,
+          Authorization: "Basic " + btoa(api_key + ":" + secret_key),
         },
         httpsAgent: new https.Agent({
           rejectUnauthorized: false,
         }),
       }
     )
-    .then((response) => console.log(response))
+    .then((response) => console.log(response, api_key + ":" + secret_key))
     .catch((error) => console.error(error.response.data));
 }
 
