@@ -8,7 +8,7 @@ const source_addr = "INFO";
 function send_sms() {
   axios
     .post(
-      "https://sms.bongolive.africa/api/v1/send",
+      "https://apisms.beem.africa/v1/send",
       {
         source_addr: source_addr,
         schedule_time: "",
