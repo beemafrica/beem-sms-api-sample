@@ -21,8 +21,8 @@ namespace SMSAPI.Controllers
     [ApiController]
     public class SMSController : ControllerBase
     {
-        private const string URL = "https://apisms.bongolive.africa/v1/send";
-        private const string URL_Airtime = "https://apiairtime.bongolive.africa/v1/transfer";
+        private const string URL = "https://apisms.beem.africa/v1/send";
+        private const string URL_Airtime = "https://apiairtime.beem.africa/v1/transfer";
         private readonly SMSAPIDBContext _context;
 
         public SMSController(SMSAPIDBContext context)
