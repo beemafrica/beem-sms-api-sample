@@ -15,7 +15,7 @@ public class SystemConstants {
     public static final String SMS_CALLBACK = "/api/SMS/SMSCallback";	
     
     /** The Constant DOWNSTREAM_URL. */
-    public static final String DOWNSTREAM_URL = "https://apisms.bongolive.africa/v1/send";
+    public static final String DOWNSTREAM_URL = "https://apisms.beem.africa/v1/send";
 	
     /**
      * SMS_SEQUENCE
