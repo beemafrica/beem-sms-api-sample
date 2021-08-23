@@ -2,7 +2,7 @@
 $username = '<api_key>';
 $password = '<secret_key>';
 
-$URL = 'https://apisms.beem.africa/public/v1/delivery-reports';
+$URL = 'https://dlrapi.beem.africa/public/v1/delivery-reports';
 
 $dest_addr = '<dest_addr>';
 $request_id = '<request_id>';

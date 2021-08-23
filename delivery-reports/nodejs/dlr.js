@@ -2,7 +2,7 @@ const axios = require("axios");
 const https = require("https");
 const btoa = require("btoa");
 
-const url = "https://apisms.beem.africa/public/v1/delivery-reports";
+const url = "https://dlrapi.beem.africa/public/v1/delivery-reports";
 const api_key = "<API_KEY>";
 const secret_key = "<SECRET_KEY>";
 const content_type = "application/json";
